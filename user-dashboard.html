@@ -58,6 +58,15 @@
     [dir="ltr"] #sidebar.sidebar-closed {
       transform: translateX(-100%);
     }
+
+    /* Fade transition for sections */
+    .content-section {
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body class="font-sans antialiased bg-gray-50 dark:bg-dark-brown text-gray-800 dark:text-gray-100 transition-colors duration-300">
@@ -78,37 +87,32 @@
         
         <p class="px-4 text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Overview</p>
         
-        <a href="user-dashboard.html" class="flex items-center space-x-3 rtl:space-x-reverse px-4 py-3 bg-terracotta text-white rounded-xl shadow-lg shadow-terracotta/20 transition-all duration-300 transform hover:scale-[1.02]">
+        <a href="#" data-target="all" class="nav-btn flex items-center space-x-3 rtl:space-x-reverse px-4 py-3 bg-terracotta text-white rounded-xl shadow-lg shadow-terracotta/20 transition-all duration-300 transform hover:scale-[1.02]">
           <i class="fas fa-home w-5 text-center"></i>
           <span class="font-medium">My Dashboard</span>
         </a>
 
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse px-4 py-3 text-gray-300 hover:bg-cream/10 hover:text-terracotta rounded-xl transition-all duration-300 group">
-          <i class="fas fa-pencil-ruler w-5 text-center group-hover:text-terracotta transition-colors"></i>
-          <span class="font-medium">My Floor Plans</span>
+        <a href="#" data-target="section-status" class="nav-btn flex items-center space-x-3 rtl:space-x-reverse px-4 py-3 text-gray-300 hover:bg-cream/10 hover:text-terracotta rounded-xl transition-all duration-300 group">
+          <i class="fas fa-tasks w-5 text-center group-hover:text-terracotta transition-colors"></i>
+          <span class="font-medium">Project Status</span>
         </a>
 
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse px-4 py-3 text-gray-300 hover:bg-cream/10 hover:text-terracotta rounded-xl transition-all duration-300 group">
-          <i class="fas fa-cube w-5 text-center group-hover:text-terracotta transition-colors"></i>
-          <span class="font-medium">3D Renderings</span>
+        <a href="#" data-target="section-updates" class="nav-btn flex items-center space-x-3 rtl:space-x-reverse px-4 py-3 text-gray-300 hover:bg-cream/10 hover:text-terracotta rounded-xl transition-all duration-300 group">
+          <i class="fas fa-chart-pie w-5 text-center group-hover:text-terracotta transition-colors"></i>
+          <span class="font-medium">Insights & Updates</span>
         </a>
 
         <p class="px-4 text-xs font-bold text-gray-400 uppercase tracking-wider mt-8 mb-3">Account</p>
 
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse px-4 py-3 text-gray-300 hover:bg-cream/10 hover:text-terracotta rounded-xl transition-all duration-300 group">
+        <a href="#" data-target="section-financials" class="nav-btn flex items-center space-x-3 rtl:space-x-reverse px-4 py-3 text-gray-300 hover:bg-cream/10 hover:text-terracotta rounded-xl transition-all duration-300 group">
           <i class="fas fa-file-invoice-dollar w-5 text-center group-hover:text-terracotta transition-colors"></i>
           <span class="font-medium">Financials</span>
           <span class="ltr:ml-auto rtl:mr-auto bg-terracotta text-white text-[10px] font-bold px-2 py-0.5 rounded-full">1 Due</span>
         </a>
 
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse px-4 py-3 text-gray-300 hover:bg-cream/10 hover:text-terracotta rounded-xl transition-all duration-300 group">
-          <i class="fas fa-calendar-check w-5 text-center group-hover:text-terracotta transition-colors"></i>
-          <span class="font-medium">Appointments</span>
-        </a>
-
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse px-4 py-3 text-gray-300 hover:bg-cream/10 hover:text-terracotta rounded-xl transition-all duration-300 group">
+        <a href="#" data-target="section-communication" class="nav-btn flex items-center space-x-3 rtl:space-x-reverse px-4 py-3 text-gray-300 hover:bg-cream/10 hover:text-terracotta rounded-xl transition-all duration-300 group">
           <i class="fas fa-comments w-5 text-center group-hover:text-terracotta transition-colors"></i>
-          <span class="font-medium">Message Designer</span>
+          <span class="font-medium">Messages & Schedule</span>
         </a>
       </nav>
 
@@ -153,105 +157,105 @@
         </div>
       </header>
 
-      <main class="flex-1 overflow-y-auto p-4 md:p-6 lg:p-8 scroll-smooth">
+      <main class="flex-1 overflow-y-auto p-4 md:p-6 lg:p-8 scroll-smooth" id="main-scroll-area">
         
-        <div class="bg-dark-brown rounded-2xl p-6 mb-8 text-white shadow-lg relative overflow-hidden border border-terracotta/20">
-          <div class="absolute ltr:right-0 rtl:left-0 top-0 h-full w-1/3 bg-terracotta/10 ltr:skew-x-12 rtl:-skew-x-12 transform ltr:translate-x-12 rtl:-translate-x-12"></div>
-          
-          <div class="relative z-10">
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-              <div>
-                <p class="text-terracotta text-sm font-bold uppercase tracking-wider">Project Status</p>
-                <h3 class="text-2xl md:text-3xl font-bold mt-1 text-white">Full Room Design: Master Suite</h3>
+        <div id="section-status" class="content-section">
+          <div class="bg-dark-brown rounded-2xl p-6 mb-8 text-white shadow-lg relative overflow-hidden border border-terracotta/20">
+            <div class="absolute ltr:right-0 rtl:left-0 top-0 h-full w-1/3 bg-terracotta/10 ltr:skew-x-12 rtl:-skew-x-12 transform ltr:translate-x-12 rtl:-translate-x-12"></div>
+            
+            <div class="relative z-10">
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                <div>
+                  <p class="text-terracotta text-sm font-bold uppercase tracking-wider">Project Status</p>
+                  <h3 class="text-2xl md:text-3xl font-bold mt-1 text-white">Full Room Design: Master Suite</h3>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20 text-center">
+                  <span class="block text-xs text-gray-300">Completion</span>
+                  <span class="block text-xl font-bold text-terracotta">75%</span>
+                </div>
               </div>
-              <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20 text-center">
-                <span class="block text-xs text-gray-300">Completion</span>
-                <span class="block text-xl font-bold text-terracotta">75%</span>
+
+              <div class="relative">
+                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-white/10 border border-white/5">
+                  <div style="width: 75%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-terracotta transition-all duration-1000"></div>
+                </div>
+                <div class="flex justify-between text-xs md:text-sm text-gray-400 font-medium">
+                  <span class="text-terracotta">Consultation</span>
+                  <span class="text-terracotta">Floor Plan</span>
+                  <span class="text-white animate-pulse">3D Renders</span>
+                  <span>Purchasing</span>
+                  <span class="opacity-50">Installation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
+            <div class="bg-white dark:bg-dark-brown rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-olive/30 hover:shadow-md transition-shadow">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Furniture Budget</p>
+                  <h3 class="text-2xl font-bold text-gray-800 dark:text-white mt-1">$4,500</h3>
+                </div>
+                <div class="p-3 bg-cream/50 dark:bg-terracotta/10 rounded-xl">
+                  <i class="fas fa-couch text-terracotta text-lg"></i>
+                </div>
+              </div>
+              <div class="flex items-center text-xs">
+                <span class="text-gray-500 dark:text-gray-400">Total Budget: <span class="font-bold text-gray-800 dark:text-gray-200">$8,000</span></span>
               </div>
             </div>
 
-            <div class="relative">
-              <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-white/10 border border-white/5">
-                <div style="width: 75%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-terracotta transition-all duration-1000"></div>
+            <div class="bg-white dark:bg-dark-brown rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-olive/30 hover:shadow-md transition-shadow">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Outstanding Balance</p>
+                  <h3 class="text-2xl font-bold text-gray-800 dark:text-white mt-1">$850</h3>
+                </div>
+                <div class="p-3 bg-red-50 dark:bg-red-900/30 rounded-xl">
+                  <i class="fas fa-file-invoice text-red-500 text-lg"></i>
+                </div>
               </div>
-              <div class="flex justify-between text-xs md:text-sm text-gray-400 font-medium">
-                <span class="text-terracotta">Consultation</span>
-                <span class="text-terracotta">Floor Plan</span>
-                <span class="text-white animate-pulse">3D Renders</span>
-                <span>Purchasing</span>
-                <span class="opacity-50">Installation</span>
+              <div class="flex items-center text-xs">
+                <span class="text-terracotta font-medium bg-red-50 dark:bg-red-900/20 px-2 py-0.5 rounded-full">Due in 2 days</span>
+              </div>
+            </div>
+
+            <div class="bg-white dark:bg-dark-brown rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-olive/30 hover:shadow-md transition-shadow">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">New 3D Renders</p>
+                  <h3 class="text-2xl font-bold text-gray-800 dark:text-white mt-1">3</h3>
+                </div>
+                <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl">
+                  <i class="fas fa-cube text-blue-500 text-lg"></i>
+                </div>
+              </div>
+              <div class="flex items-center text-xs">
+                <span class="text-green-600 dark:text-green-400 flex items-center font-bold bg-green-100 dark:bg-green-900/30 px-2 py-0.5 rounded-full">
+                  Ready for Review
+                </span>
+              </div>
+            </div>
+
+            <div class="bg-white dark:bg-dark-brown rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-olive/30 hover:shadow-md transition-shadow">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Next Appointment</p>
+                  <h3 class="text-xl font-bold text-gray-800 dark:text-white mt-1">Virtual Walkthrough</h3>
+                </div>
+                <div class="p-3 bg-purple-50 dark:bg-purple-900/30 rounded-xl">
+                  <i class="fas fa-vr-cardboard text-purple-500 text-lg"></i>
+                </div>
+              </div>
+              <div class="flex items-center text-xs">
+                <span class="text-gray-500 dark:text-gray-400">Scheduled: Nov 12th</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
-          
-          <div class="bg-white dark:bg-dark-brown rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-olive/30 hover:shadow-md transition-shadow">
-            <div class="flex justify-between items-start mb-4">
-              <div>
-                <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Furniture Budget</p>
-                <h3 class="text-2xl font-bold text-gray-800 dark:text-white mt-1">$4,500</h3>
-              </div>
-              <div class="p-3 bg-cream/50 dark:bg-terracotta/10 rounded-xl">
-                <i class="fas fa-couch text-terracotta text-lg"></i>
-              </div>
-            </div>
-            <div class="flex items-center text-xs">
-              <span class="text-gray-500 dark:text-gray-400">Total Budget: <span class="font-bold text-gray-800 dark:text-gray-200">$8,000</span></span>
-            </div>
-          </div>
-
-          <div class="bg-white dark:bg-dark-brown rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-olive/30 hover:shadow-md transition-shadow">
-            <div class="flex justify-between items-start mb-4">
-              <div>
-                <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Outstanding Balance</p>
-                <h3 class="text-2xl font-bold text-gray-800 dark:text-white mt-1">$850</h3>
-              </div>
-              <div class="p-3 bg-red-50 dark:bg-red-900/30 rounded-xl">
-                <i class="fas fa-file-invoice text-red-500 text-lg"></i>
-              </div>
-            </div>
-            <div class="flex items-center text-xs">
-              <span class="text-terracotta font-medium bg-red-50 dark:bg-red-900/20 px-2 py-0.5 rounded-full">Due in 2 days</span>
-            </div>
-          </div>
-
-          <div class="bg-white dark:bg-dark-brown rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-olive/30 hover:shadow-md transition-shadow">
-            <div class="flex justify-between items-start mb-4">
-              <div>
-                <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">New 3D Renders</p>
-                <h3 class="text-2xl font-bold text-gray-800 dark:text-white mt-1">3</h3>
-              </div>
-              <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl">
-                <i class="fas fa-cube text-blue-500 text-lg"></i>
-              </div>
-            </div>
-            <div class="flex items-center text-xs">
-              <span class="text-green-600 dark:text-green-400 flex items-center font-bold bg-green-100 dark:bg-green-900/30 px-2 py-0.5 rounded-full">
-                Ready for Review
-              </span>
-            </div>
-          </div>
-
-          <div class="bg-white dark:bg-dark-brown rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-olive/30 hover:shadow-md transition-shadow">
-            <div class="flex justify-between items-start mb-4">
-              <div>
-                <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Next Appointment</p>
-                <h3 class="text-xl font-bold text-gray-800 dark:text-white mt-1">Virtual Walkthrough</h3>
-              </div>
-              <div class="p-3 bg-purple-50 dark:bg-purple-900/30 rounded-xl">
-                <i class="fas fa-vr-cardboard text-purple-500 text-lg"></i>
-              </div>
-            </div>
-            <div class="flex items-center text-xs">
-              <span class="text-gray-500 dark:text-gray-400">Scheduled: Nov 12th</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 mb-8">
-          
+        <div id="section-updates" class="content-section grid grid-cols-1 xl:grid-cols-2 gap-6 mb-8">
           <div class="bg-white dark:bg-dark-brown p-4 md:p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-olive/30">
             <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">Furniture Budget Distribution</h3>
             <div class="relative h-64 w-full flex justify-center">
@@ -310,7 +314,7 @@
           </div>
         </div>
 
-        <div class="bg-white dark:bg-dark-brown rounded-2xl shadow-sm border border-gray-200 dark:border-olive/30 overflow-hidden mb-8">
+        <div id="section-financials" class="content-section bg-white dark:bg-dark-brown rounded-2xl shadow-sm border border-gray-200 dark:border-olive/30 overflow-hidden mb-8">
           <div class="p-5 md:p-6 flex items-center justify-between border-b border-gray-200 dark:border-olive/30">
             <h3 class="text-lg font-bold text-gray-800 dark:text-white">Recent Invoices</h3>
             <button class="text-sm text-terracotta hover:text-[#9c591e] font-semibold transition-colors">View All</button>
@@ -376,6 +380,70 @@
           </div>
         </div>
 
+        <div id="section-communication" class="content-section grid grid-cols-1 xl:grid-cols-2 gap-6 mb-8">
+          
+          <div class="bg-white dark:bg-dark-brown p-5 md:p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-olive/30 flex flex-col">
+            <div class="flex items-center justify-between mb-6">
+              <h3 class="text-lg font-bold text-gray-800 dark:text-white">Upcoming Appointments</h3>
+              <button class="text-sm text-terracotta hover:text-[#9c591e] font-semibold transition-colors">+ Book New</button>
+            </div>
+            
+            <div class="space-y-4 flex-1">
+              <div class="flex items-center p-4 bg-gray-50 dark:bg-[#1d2711] rounded-xl border border-gray-100 dark:border-olive/20 hover:border-terracotta/50 transition-colors">
+                <div class="bg-terracotta/10 text-terracotta rounded-lg p-3 text-center min-w-[3.5rem] ltr:mr-4 rtl:ml-4">
+                  <p class="text-[10px] uppercase font-bold">Nov</p>
+                  <p class="text-xl font-bold leading-none mt-0.5">12</p>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-gray-800 dark:text-white">Virtual Walkthrough</h4>
+                  <p class="text-xs text-gray-500 dark:text-gray-400 mt-1"><i class="far fa-clock ltr:mr-1 rtl:ml-1"></i> 10:00 AM - 11:00 AM</p>
+                </div>
+              </div>
+              
+              <div class="flex items-center p-4 bg-gray-50 dark:bg-[#1d2711] rounded-xl border border-gray-100 dark:border-olive/20 hover:border-terracotta/50 transition-colors">
+                <div class="bg-gray-200 dark:bg-olive/20 text-gray-600 dark:text-gray-400 rounded-lg p-3 text-center min-w-[3.5rem] ltr:mr-4 rtl:ml-4">
+                  <p class="text-[10px] uppercase font-bold">Nov</p>
+                  <p class="text-xl font-bold leading-none mt-0.5">18</p>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-gray-800 dark:text-white">Material Selection Review</h4>
+                  <p class="text-xs text-gray-500 dark:text-gray-400 mt-1"><i class="far fa-clock ltr:mr-1 rtl:ml-1"></i> 2:00 PM - 3:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-dark-brown p-5 md:p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-olive/30 flex flex-col h-[400px]">
+            <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">Message Designer</h3>
+            
+            <div class="flex-1 overflow-y-auto space-y-4 ltr:pr-2 rtl:pl-2 mb-4 scrollbar-thin">
+              <div class="flex items-start gap-3">
+                <img src="https://ui-avatars.com/api/?name=Elena+D&background=BC6C25&color=fff" class="w-8 h-8 rounded-full shadow-sm" alt="Designer">
+                <div class="bg-gray-100 dark:bg-[#1d2711] p-3 rounded-2xl rounded-tl-none text-sm text-gray-700 dark:text-gray-300">
+                  <p>Hi Jessica! I've uploaded the new 3D renders for the master suite. Let me know what you think!</p>
+                  <span class="text-[10px] text-gray-400 mt-1 block">Yesterday, 3:45 PM</span>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-3 flex-row-reverse">
+                <img src="https://ui-avatars.com/api/?name=Jessica+Miller&background=F6F1E9&color=BC6C25" class="w-8 h-8 rounded-full border border-terracotta shadow-sm" alt="User">
+                <div class="bg-terracotta text-white p-3 rounded-2xl rounded-tr-none text-sm shadow-md">
+                  <p>They look amazing, Elena! I absolutely love the bed frame. Approved!</p>
+                  <span class="text-[10px] text-white/70 mt-1 block ltr:text-right rtl:text-left">Today, 9:20 AM</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative mt-auto">
+              <input type="text" placeholder="Type your message..." class="w-full bg-gray-50 dark:bg-[#1d2711] border border-gray-200 dark:border-olive/30 text-gray-800 dark:text-white text-sm rounded-full focus:ring-terracotta focus:border-terracotta block p-3 ltr:pl-4 rtl:pr-4 ltr:pr-12 rtl:pl-12 outline-none transition-shadow">
+              <button class="absolute ltr:right-2 rtl:left-2 top-1.5 bottom-1.5 bg-terracotta hover:bg-[#9c591e] text-white rounded-full w-9 flex items-center justify-center transition-colors shadow-sm">
+                <i class="fas fa-paper-plane text-xs ltr:-ml-0.5 rtl:-mr-0.5"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
       </main>
     </div>
   </div>
@@ -387,7 +455,6 @@
     const html = document.documentElement;
     const mainContent = document.querySelector('.flex-1.lg\\:ml-64');
 
-    // Initialize RTL from localStorage
     if (localStorage.getItem('direction') === 'rtl') {
       html.setAttribute('dir', 'rtl');
       rtlText.textContent = 'LTR';
@@ -402,7 +469,6 @@
 
     rtlToggle.addEventListener('click', () => {
       const currentDir = html.getAttribute('dir');
-      
       if (currentDir === 'ltr') {
         html.setAttribute('dir', 'rtl');
         localStorage.setItem('direction', 'rtl');
@@ -429,7 +495,6 @@
     
     function toggleSidebar() {
       const isClosed = sidebar.classList.contains('sidebar-closed');
-      
       if (isClosed) {
         sidebar.classList.remove('sidebar-closed');
         overlay.classList.remove('hidden');
@@ -464,14 +529,50 @@
       }
     });
 
-    // --- Chart.js Configuration for USER Dashboard ---
+    // --- Sidebar Filter Logic ---
+    const navBtns = document.querySelectorAll('.nav-btn');
+    const sections = document.querySelectorAll('.content-section');
+    const scrollArea = document.getElementById('main-scroll-area');
+
+    navBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // Remove active state from all buttons
+        navBtns.forEach(b => {
+          b.classList.remove('bg-terracotta', 'text-white', 'shadow-lg', 'shadow-terracotta/20', 'transform', 'hover:scale-[1.02]');
+          b.classList.add('text-gray-300', 'hover:bg-cream/10', 'hover:text-terracotta');
+        });
+
+        // Add active state to clicked button
+        btn.classList.remove('text-gray-300', 'hover:bg-cream/10', 'hover:text-terracotta');
+        btn.classList.add('bg-terracotta', 'text-white', 'shadow-lg', 'shadow-terracotta/20', 'transform', 'hover:scale-[1.02]');
+
+        // Filter sections
+        const target = btn.getAttribute('data-target');
+        sections.forEach(sec => {
+          if (target === 'all' || sec.id === target) {
+            sec.classList.remove('hidden');
+          } else {
+            sec.classList.add('hidden');
+          }
+        });
+        
+        // Scroll to top
+        scrollArea.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // Close sidebar on mobile after click
+        if (window.innerWidth < 1024) toggleSidebar();
+      });
+    });
+
+    // --- Chart.js Configuration ---
     let budgetChart;
 
     function initCharts() {
       const isDark = html.classList.contains('dark');
       const textColor = isDark ? '#9ca3af' : '#4b5563';
 
-      // Budget Breakdown Chart (Doughnut)
       const ctx = document.getElementById('budgetChart').getContext('2d');
       budgetChart = new Chart(ctx, {
         type: 'doughnut',
@@ -480,11 +581,11 @@
           datasets: [{
             data: [1500, 450, 600, 350, 5100],
             backgroundColor: [
-              '#BC6C25', // Terracotta
-              '#606C38', // Olive
-              '#10b981', // Green
-              '#f59e0b', // Amber
-              isDark ? '#374151' : '#e5e7eb'  // Gray (Remaining)
+              '#BC6C25',
+              '#606C38',
+              '#10b981',
+              '#f59e0b',
+              isDark ? '#374151' : '#e5e7eb'
             ],
             borderWidth: 0,
             hoverOffset: 4
@@ -496,11 +597,7 @@
           plugins: {
             legend: { 
               position: 'bottom', 
-              labels: { 
-                color: textColor, 
-                padding: 20, 
-                usePointStyle: true 
-              } 
+              labels: { color: textColor, padding: 20, usePointStyle: true } 
             },
             tooltip: {
               backgroundColor: isDark ? '#1f2937' : '#fff',
@@ -511,18 +608,14 @@
               callbacks: {
                 label: function(context) {
                   let label = context.label || '';
-                  if (label) {
-                    label += ': ';
-                  }
-                  if (context.parsed !== null) {
-                    label += '$' + context.parsed;
-                  }
+                  if (label) label += ': ';
+                  if (context.parsed !== null) label += '$' + context.parsed;
                   return label;
                 }
               }
             }
           },
-          cutout: '70%' // Thinner ring
+          cutout: '70%'
         }
       });
     }
@@ -536,16 +629,13 @@
         budgetChart.options.plugins.tooltip.titleColor = isDark ? '#fff' : '#111';
         budgetChart.options.plugins.tooltip.bodyColor = isDark ? '#ccc' : '#444';
         
-        // Update Remaining Color based on mode
         budgetChart.data.datasets[0].backgroundColor[4] = isDark ? '#374151' : '#e5e7eb';
-        
         budgetChart.update();
       }
     }
 
     window.addEventListener('load', initCharts);
     
-    // Handle Window Resize
     window.addEventListener('resize', () => {
        if (window.innerWidth >= 1024) {
          sidebar.classList.remove('sidebar-closed');
