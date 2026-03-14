@@ -340,49 +340,69 @@
   </section>
 
   <section class="py-20 bg-gray-50 dark:bg-[#1d2711]">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center mb-16">
         <span class="text-terracotta font-bold tracking-wider uppercase text-sm">FAQ</span>
         <h2 class="text-3xl md:text-4xl font-extrabold text-dark-brown dark:text-white mt-2">Frequently Asked Questions</h2>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-8">
+      <div class="space-y-4">
         
-        <div class="bg-white dark:bg-dark-brown p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30">
-          <h4 class="text-lg font-bold text-dark-brown dark:text-white mb-3 flex items-center">
-            <i class="fas fa-question-circle text-terracotta mr-2"></i> Does the price include the cost of clothes?
-          </h4>
-          <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-            No, the package prices cover the styling services, consultations, and the stylist's time. The budget for purchasing new clothing is separate and determined entirely by you.
-          </p>
+        <div class="bg-white dark:bg-dark-brown rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30 overflow-hidden">
+          <button class="faq-toggle w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none transition-colors hover:bg-gray-50 dark:hover:bg-white/5">
+            <h4 class="text-lg font-bold text-dark-brown dark:text-white flex items-center">
+              <i class="fas fa-question-circle text-terracotta mr-3"></i> Does the price include the cost of clothes?
+            </h4>
+            <i class="fas fa-chevron-down text-terracotta transition-transform duration-300 faq-icon text-sm"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 border-t border-gray-50 dark:border-white/5">
+            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+              No, the package prices cover the styling services, consultations, and the stylist's time. The budget for purchasing new clothing is separate and determined entirely by you.
+            </p>
+          </div>
         </div>
 
-        <div class="bg-white dark:bg-dark-brown p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30">
-          <h4 class="text-lg font-bold text-dark-brown dark:text-white mb-3 flex items-center">
-            <i class="fas fa-question-circle text-terracotta mr-2"></i> What if I live outside your local area?
-          </h4>
-          <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-            We offer robust Virtual Styling packages that cover clients globally! We conduct audits via video call and send curated online shopping links directly to your inbox.
-          </p>
+        <div class="bg-white dark:bg-dark-brown rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30 overflow-hidden">
+          <button class="faq-toggle w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none transition-colors hover:bg-gray-50 dark:hover:bg-white/5">
+            <h4 class="text-lg font-bold text-dark-brown dark:text-white flex items-center">
+              <i class="fas fa-question-circle text-terracotta mr-3"></i> What if I live outside your local area?
+            </h4>
+            <i class="fas fa-chevron-down text-terracotta transition-transform duration-300 faq-icon text-sm"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 border-t border-gray-50 dark:border-white/5">
+            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+              We offer robust Virtual Styling packages that cover clients globally! We conduct audits via video call and send curated online shopping links directly to your inbox.
+            </p>
+          </div>
         </div>
 
-        <div class="bg-white dark:bg-dark-brown p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30">
-          <h4 class="text-lg font-bold text-dark-brown dark:text-white mb-3 flex items-center">
-            <i class="fas fa-question-circle text-terracotta mr-2"></i> How much do I need to spend on clothes?
-          </h4>
-          <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-            There is no minimum budget! We style clients who shop at affordable high-street brands as well as those looking for luxury designer pieces.
-          </p>
+        <div class="bg-white dark:bg-dark-brown rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30 overflow-hidden">
+          <button class="faq-toggle w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none transition-colors hover:bg-gray-50 dark:hover:bg-white/5">
+            <h4 class="text-lg font-bold text-dark-brown dark:text-white flex items-center">
+              <i class="fas fa-question-circle text-terracotta mr-3"></i> How much do I need to spend on clothes?
+            </h4>
+            <i class="fas fa-chevron-down text-terracotta transition-transform duration-300 faq-icon text-sm"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 border-t border-gray-50 dark:border-white/5">
+            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+              There is no minimum budget! We style clients who shop at affordable high-street brands as well as those looking for luxury designer pieces.
+            </p>
+          </div>
         </div>
 
-        <div class="bg-white dark:bg-dark-brown p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30">
-          <h4 class="text-lg font-bold text-dark-brown dark:text-white mb-3 flex items-center">
-            <i class="fas fa-question-circle text-terracotta mr-2"></i> Can I split my payments?
-          </h4>
-          <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-            Yes, for our "Style Upgrade" and "VIP Makeover" packages, we offer a 50% deposit to secure your booking, with the remaining 50% due on the day of your service.
-          </p>
+        <div class="bg-white dark:bg-dark-brown rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30 overflow-hidden">
+          <button class="faq-toggle w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none transition-colors hover:bg-gray-50 dark:hover:bg-white/5">
+            <h4 class="text-lg font-bold text-dark-brown dark:text-white flex items-center">
+              <i class="fas fa-question-circle text-terracotta mr-3"></i> Can I split my payments?
+            </h4>
+            <i class="fas fa-chevron-down text-terracotta transition-transform duration-300 faq-icon text-sm"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 border-t border-gray-50 dark:border-white/5">
+            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+              Yes, for our "Style Upgrade" and "VIP Makeover" packages, we offer a 50% deposit to secure your booking, with the remaining 50% due on the day of your service.
+            </p>
+          </div>
         </div>
 
       </div>
@@ -544,6 +564,31 @@
     setupMobileDropdown('mobile-home-dropdown', 'mobile-home-menu', 'mobile-home-icon');
     setupMobileDropdown('mobile-dashboard-dropdown', 'mobile-dashboard-menu', 'mobile-dashboard-icon');
 
+    // FAQ Accordion Toggle
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    
+    faqToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const content = toggle.nextElementSibling;
+        const icon = toggle.querySelector('.faq-icon');
+        
+        // Optional: Close other open accordions automatically
+        document.querySelectorAll('.faq-content').forEach(c => {
+          if (c !== content && !c.classList.contains('hidden')) {
+            c.classList.add('hidden');
+            c.previousElementSibling.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+          }
+        });
+
+        // Toggle the clicked accordion
+        content.classList.toggle('hidden');
+        if (content.classList.contains('hidden')) {
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
   </script>
 </body>
 </html>

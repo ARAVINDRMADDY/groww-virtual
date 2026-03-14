@@ -223,7 +223,6 @@
 
   <div class="grid lg:grid-cols-4 gap-8 relative z-10">
 
-    <!-- Card 1 -->
     <div class="bg-white dark:bg-dark-brown p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30 text-center hover:shadow-lg transition duration-300 h-full flex flex-col">
       <div class="w-16 h-16 mx-auto bg-cream dark:bg-olive/20 rounded-full flex items-center justify-center mb-6 text-terracotta text-2xl border-4 border-white dark:border-dark-brown shadow-md">
         <i class="fas fa-clipboard-list"></i>
@@ -232,7 +231,6 @@
       <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Take our style quiz, upload photos of your room, and share floor measurements and budget.</p>
     </div>
 
-    <!-- Card 2 (offset removed) -->
     <div class="bg-white dark:bg-dark-brown p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30 text-center hover:shadow-lg transition duration-300 h-full flex flex-col">
       <div class="w-16 h-16 mx-auto bg-cream dark:bg-olive/20 rounded-full flex items-center justify-center mb-6 text-terracotta text-2xl border-4 border-white dark:border-dark-brown shadow-md">
         <i class="fas fa-palette"></i>
@@ -241,7 +239,6 @@
       <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Your designer curates a mood board with color palettes, textures, and initial furniture picks.</p>
     </div>
 
-    <!-- Card 3 -->
     <div class="bg-white dark:bg-dark-brown p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30 text-center hover:shadow-lg transition duration-300 h-full flex flex-col">
       <div class="w-16 h-16 mx-auto bg-cream dark:bg-olive/20 rounded-full flex items-center justify-center mb-6 text-terracotta text-2xl border-4 border-white dark:border-dark-brown shadow-md">
         <i class="fas fa-cube"></i>
@@ -250,7 +247,6 @@
       <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">See your new room come to life in photorealistic 3D, allowing you to visualize before you buy.</p>
     </div>
 
-    <!-- Card 4 (offset removed) -->
     <div class="bg-white dark:bg-dark-brown p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30 text-center hover:shadow-lg transition duration-300 h-full flex flex-col">
       <div class="w-16 h-16 mx-auto bg-cream dark:bg-olive/20 rounded-full flex items-center justify-center mb-6 text-terracotta text-2xl border-4 border-white dark:border-dark-brown shadow-md">
         <i class="fas fa-shopping-cart"></i>
@@ -360,54 +356,46 @@
     </div>
   </section>
 
-  <section class="py-20 bg-gray-50 dark:bg-dark-brown/95 transition-colors duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section class="py-20 relative overflow-hidden bg-cream/20 dark:bg-[#1a2310] transition-colors duration-300">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-terracotta/10 rounded-full blur-3xl z-0"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-olive/10 rounded-full blur-3xl z-0"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="text-center mb-16">
-        <span class="text-terracotta font-bold tracking-wider uppercase text-sm">Real Results</span>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-dark-brown dark:text-white mt-2 mb-4">Before & After Showcase</h2>
-        <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Drag the slider or view the transformations of dull spaces turned into stunning, magazine-worthy interiors.</p>
+        <span class="text-terracotta font-bold tracking-wider uppercase text-sm">Why Us</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-dark-brown dark:text-white mt-2 mb-4">The Virtual Advantage</h2>
+        <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Experience the future of interior design. Beautiful spaces curated for you, without the traditional friction.</p>
       </div>
 
-      <div class="grid lg:grid-cols-2 gap-10">
-        <div class="bg-white dark:bg-dark-brown rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-olive/30 flex flex-col sm:flex-row h-auto sm:h-[350px]">
-          <div class="flex w-full sm:w-2/3 h-64 sm:h-full relative">
-            <div class="w-1/2 h-full relative">
-               <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Empty Living Room Before" class="w-full h-full object-cover grayscale opacity-80">
-               <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">BEFORE</div>
-            </div>
-            <div class="w-1/2 h-full relative border-l-4 border-terracotta">
-               <img src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Styled Living Room After" class="w-full h-full object-cover">
-               <div class="absolute bottom-2 right-2 bg-terracotta text-white text-xs px-2 py-1 rounded font-bold">AFTER</div>
-            </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-white/80 dark:bg-dark-brown/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 dark:border-olive/20 shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center group">
+          <div class="w-20 h-20 mx-auto bg-cream dark:bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-terracotta transition-colors duration-300">
+            <i class="fas fa-clock text-3xl text-terracotta group-hover:text-white transition-colors duration-300 animate-float"></i>
           </div>
-          <div class="p-6 sm:w-1/3 flex flex-col justify-center">
-            <h3 class="text-lg font-bold text-dark-brown dark:text-white mb-2">The Blank Canvas Living Room</h3>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">"We had no idea how to fill the space. The 3D plan showed us exactly what size rug and sofa to buy. It's perfect!"</p>
-            <span class="text-xs font-semibold text-terracotta uppercase tracking-wider">— Austin, TX</span>
-          </div>
+          <h3 class="text-xl font-bold text-dark-brown dark:text-white mb-3">Save Time</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">Skip the showrooms. We bring the entire design process, from concept to shopping list, right to your inbox.</p>
         </div>
 
-        <div class="bg-white dark:bg-dark-brown rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-olive/30 flex flex-col sm:flex-row h-auto sm:h-[350px]">
-          <div class="flex w-full sm:w-2/3 h-64 sm:h-full relative">
-            <div class="w-1/2 h-full relative">
-               <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Cluttered Bedroom Before" class="w-full h-full object-cover grayscale opacity-80">
-               <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">BEFORE</div>
-            </div>
-            <div class="w-1/2 h-full relative border-l-4 border-terracotta">
-               <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Beautiful Bedroom After" class="w-full h-full object-cover">
-               <div class="absolute bottom-2 right-2 bg-terracotta text-white text-xs px-2 py-1 rounded font-bold">AFTER</div>
-            </div>
+        <div class="bg-white/80 dark:bg-dark-brown/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 dark:border-olive/20 shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center group">
+          <div class="w-20 h-20 mx-auto bg-cream dark:bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-terracotta transition-colors duration-300">
+            <i class="fas fa-piggy-bank text-3xl text-terracotta group-hover:text-white transition-colors duration-300 animate-float" style="animation-delay: 0.5s;"></i>
           </div>
-          <div class="p-6 sm:w-1/3 flex flex-col justify-center">
-            <h3 class="text-lg font-bold text-dark-brown dark:text-white mb-2">Master Suite Oasis</h3>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">"I finally have the peaceful retreat I always wanted. The designer mixed my old dresser with new modern pieces flawlessly."</p>
-            <span class="text-xs font-semibold text-terracotta uppercase tracking-wider">— London, UK</span>
-          </div>
+          <h3 class="text-xl font-bold text-dark-brown dark:text-white mb-3">Flat-Fee Pricing</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">No hourly rates or hidden fees. Know exactly what you'll pay upfront with our transparent room packages.</p>
         </div>
+
+        <div class="bg-white/80 dark:bg-dark-brown/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 dark:border-olive/20 shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center group">
+          <div class="w-20 h-20 mx-auto bg-cream dark:bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-terracotta transition-colors duration-300">
+            <i class="fas fa-gem text-3xl text-terracotta group-hover:text-white transition-colors duration-300 animate-float" style="animation-delay: 1s;"></i>
+          </div>
+          <h3 class="text-xl font-bold text-dark-brown dark:text-white mb-3">Expert Curation</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">Access top-tier design talent anywhere in the world and get exclusive trade discounts on premium brands.</p>
+        </div>
+
       </div>
     </div>
   </section>
-
   <section id="packages" class="py-20 bg-white dark:bg-dark-brown transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
