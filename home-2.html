@@ -16,8 +16,8 @@
         extend: {
           colors: {
             terracotta: '#BC6C25',
-            olive: '#606C38',
-            'dark-brown': '#283618',
+            'brand-brown': '#795548',
+            'dark-brown': '#3E2723',
             cream: '#F6F1E9',
             white: '#FFFFFF'
           }
@@ -64,7 +64,7 @@
                 <span class="text-sm">Home</span>
                 <i class="fas fa-chevron-down text-xs"></i>
               </button>
-              <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-dark-brown border dark:border-olive/30 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
+              <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-dark-brown border dark:border-brand-brown/30 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
                 <a href="index.html" class="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-cream/50 dark:hover:bg-cream/20 hover:text-terracotta transition duration-300 rounded-t-md">Home Page 1</a>
                 <a href="home-2.html" class="block px-4 py-3 text-terracotta bg-gray-50 dark:bg-dark-brown hover:bg-gray-100 dark:hover:bg-cream/20 transition duration-300 rounded-b-md">Home Page 2</a>
               </div>
@@ -82,7 +82,7 @@
                 <span class="text-sm">Dashboard</span>
                 <i class="fas fa-chevron-down text-xs"></i>
               </button>
-              <div class="absolute right-0 mt-2 w-56 bg-white dark:bg-dark-brown border dark:border-olive/30 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
+              <div class="absolute right-0 mt-2 w-56 bg-white dark:bg-dark-brown border dark:border-brand-brown/30 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
                 <a href="admin-dashboard.html" class="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-cream/50 dark:hover:bg-cream/20 hover:text-terracotta transition duration-300 rounded-t-md">
                   <i class="fas fa-user-shield mr-2"></i>Admin Dashboard
                 </a>
@@ -99,7 +99,7 @@
           <a href="login.html" class="nav-button text-gray-800 dark:text-white hover:text-terracotta px-3 py-2 rounded-lg font-medium transition duration-300 text-sm flex items-center space-x-1">
             <span>Login</span>
           </a>
-          <a href="register.html" class="nav-button bg-terracotta hover:bg-olive text-white px-5 py-2.5 rounded-full font-medium transition duration-300 text-sm flex items-center space-x-2 shadow-md whitespace-nowrap">
+          <a href="register.html" class="nav-button bg-terracotta hover:bg-brand-brown text-white px-5 py-2.5 rounded-full font-medium transition duration-300 text-sm flex items-center space-x-2 shadow-md whitespace-nowrap">
             <i class="fas fa-user-plus"></i>
             <span>Register</span>
           </a>
@@ -163,7 +163,7 @@
         <div class="pt-3 border-t border-gray-200 dark:border-white/10 mt-3 space-y-2">
           <div class="grid grid-cols-2 gap-2">
             <a href="login.html" class="block w-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 text-sm">Login</a>
-            <a href="register.html" class="block w-full bg-terracotta hover:bg-olive text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 shadow-md text-sm">Register</a>
+            <a href="register.html" class="block w-full bg-terracotta hover:bg-brand-brown text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 shadow-md text-sm">Register</a>
           </div>
           <div class="grid grid-cols-2 gap-2 mt-2">
             <button id="mobile-rtl-toggle" class="bg-gray-100 dark:bg-white/10 text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 hover:bg-gray-200 dark:hover:bg-white/20 text-sm">
@@ -200,11 +200,8 @@
       </p>
 
       <div class="flex flex-col sm:flex-row justify-center gap-5">
-        <a href="#packages" class="inline-flex items-center justify-center px-8 py-4 bg-terracotta hover:bg-olive text-white rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-olive/50 transform hover:-translate-y-1 text-lg">
+        <a href="#packages" class="inline-flex items-center justify-center px-8 py-4 bg-terracotta hover:bg-brand-brown text-white rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-brand-brown/50 transform hover:-translate-y-1 text-lg">
           Explore Packages
-        </a>
-        <a href="#designers" class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white/80 hover:bg-white hover:text-dark-brown text-white rounded-full font-semibold transition-all duration-300 transform hover:-translate-y-1 text-lg">
-          Meet The Designers
         </a>
       </div>
     </div>
@@ -220,36 +217,36 @@
 </div>
 
 <div class="relative">
-  <div class="hidden lg:block absolute top-1/2 left-[10%] w-[80%] h-1 bg-gray-200 dark:bg-olive/30 -translate-y-1/2 z-0"></div>
+  <div class="hidden lg:block absolute top-1/2 left-[10%] w-[80%] h-1 bg-gray-200 dark:bg-brand-brown/30 -translate-y-1/2 z-0"></div>
 
   <div class="grid lg:grid-cols-4 gap-8 relative z-10">
 
-    <div class="bg-white dark:bg-dark-brown p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30 text-center hover:shadow-lg transition duration-300 h-full flex flex-col">
-      <div class="w-16 h-16 mx-auto bg-cream dark:bg-olive/20 rounded-full flex items-center justify-center mb-6 text-terracotta text-2xl border-4 border-white dark:border-dark-brown shadow-md">
+    <div class="bg-white dark:bg-dark-brown p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-brand-brown/30 text-center hover:shadow-lg transition duration-300 h-full flex flex-col">
+      <div class="w-16 h-16 mx-auto bg-cream dark:bg-brand-brown/20 rounded-full flex items-center justify-center mb-6 text-terracotta text-2xl border-4 border-white dark:border-dark-brown shadow-md">
         <i class="fas fa-clipboard-list"></i>
       </div>
       <h3 class="text-xl font-bold text-dark-brown dark:text-white mb-2">1. The Briefing</h3>
       <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Take our style quiz, upload photos of your room, and share floor measurements and budget.</p>
     </div>
 
-    <div class="bg-white dark:bg-dark-brown p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30 text-center hover:shadow-lg transition duration-300 h-full flex flex-col">
-      <div class="w-16 h-16 mx-auto bg-cream dark:bg-olive/20 rounded-full flex items-center justify-center mb-6 text-terracotta text-2xl border-4 border-white dark:border-dark-brown shadow-md">
+    <div class="bg-white dark:bg-dark-brown p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-brand-brown/30 text-center hover:shadow-lg transition duration-300 h-full flex flex-col">
+      <div class="w-16 h-16 mx-auto bg-cream dark:bg-brand-brown/20 rounded-full flex items-center justify-center mb-6 text-terracotta text-2xl border-4 border-white dark:border-dark-brown shadow-md">
         <i class="fas fa-palette"></i>
       </div>
       <h3 class="text-xl font-bold text-dark-brown dark:text-white mb-2">2. Concept Board</h3>
       <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Your designer curates a mood board with color palettes, textures, and initial furniture picks.</p>
     </div>
 
-    <div class="bg-white dark:bg-dark-brown p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30 text-center hover:shadow-lg transition duration-300 h-full flex flex-col">
-      <div class="w-16 h-16 mx-auto bg-cream dark:bg-olive/20 rounded-full flex items-center justify-center mb-6 text-terracotta text-2xl border-4 border-white dark:border-dark-brown shadow-md">
+    <div class="bg-white dark:bg-dark-brown p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-brand-brown/30 text-center hover:shadow-lg transition duration-300 h-full flex flex-col">
+      <div class="w-16 h-16 mx-auto bg-cream dark:bg-brand-brown/20 rounded-full flex items-center justify-center mb-6 text-terracotta text-2xl border-4 border-white dark:border-dark-brown shadow-md">
         <i class="fas fa-cube"></i>
       </div>
       <h3 class="text-xl font-bold text-dark-brown dark:text-white mb-2">3. 3D Rendering</h3>
       <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">See your new room come to life in photorealistic 3D, allowing you to visualize before you buy.</p>
     </div>
 
-    <div class="bg-white dark:bg-dark-brown p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-olive/30 text-center hover:shadow-lg transition duration-300 h-full flex flex-col">
-      <div class="w-16 h-16 mx-auto bg-cream dark:bg-olive/20 rounded-full flex items-center justify-center mb-6 text-terracotta text-2xl border-4 border-white dark:border-dark-brown shadow-md">
+    <div class="bg-white dark:bg-dark-brown p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-brand-brown/30 text-center hover:shadow-lg transition duration-300 h-full flex flex-col">
+      <div class="w-16 h-16 mx-auto bg-cream dark:bg-brand-brown/20 rounded-full flex items-center justify-center mb-6 text-terracotta text-2xl border-4 border-white dark:border-dark-brown shadow-md">
         <i class="fas fa-shopping-cart"></i>
       </div>
       <h3 class="text-xl font-bold text-dark-brown dark:text-white mb-2">4. Shop & Install</h3>
@@ -307,59 +304,9 @@
     </div>
   </section>
 
-  <section id="designers" class="py-20 bg-cream/30 dark:bg-dark-brown/90 transition-colors duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <span class="text-terracotta font-bold tracking-wider uppercase text-sm">The Talent</span>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-dark-brown dark:text-white mt-2 mb-4">Meet Our Lead Designers</h2>
-        <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Get matched with vetted interior design professionals who know exactly how to bring your vision to life.</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        
-        <div class="bg-white dark:bg-dark-brown rounded-2xl overflow-hidden shadow-lg group">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Designer Sarah" class="w-full h-80 object-cover object-center">
-          <div class="p-6 text-center">
-            <h3 class="text-xl font-bold text-dark-brown dark:text-white">Sarah Jenkins</h3>
-            <p class="text-terracotta text-sm font-semibold mb-3">Specialty: Modern Contemporary</p>
-            <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">"I believe a home should be your personal sanctuary—clean, functional, and deeply comfortable."</p>
-            <button class="px-6 py-2 border-2 border-terracotta text-terracotta hover:bg-terracotta hover:text-white rounded-full font-bold transition duration-300">
-              View Portfolio
-            </button>
-          </div>
-        </div>
-
-        <div class="bg-white dark:bg-dark-brown rounded-2xl overflow-hidden shadow-lg group">
-          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Designer James" class="w-full h-80 object-cover object-center">
-          <div class="p-6 text-center">
-            <h3 class="text-xl font-bold text-dark-brown dark:text-white">James Harrison</h3>
-            <p class="text-terracotta text-sm font-semibold mb-3">Specialty: Industrial & Urban</p>
-            <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">"My passion is mixing raw materials with refined furnishings to create spaces with undeniable edge."</p>
-            <button class="px-6 py-2 border-2 border-terracotta text-terracotta hover:bg-terracotta hover:text-white rounded-full font-bold transition duration-300">
-              View Portfolio
-            </button>
-          </div>
-        </div>
-
-        <div class="bg-white dark:bg-dark-brown rounded-2xl overflow-hidden shadow-lg group">
-          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Designer Elena" class="w-full h-80 object-cover object-center">
-          <div class="p-6 text-center">
-            <h3 class="text-xl font-bold text-dark-brown dark:text-white">Elena Rostova</h3>
-            <p class="text-terracotta text-sm font-semibold mb-3">Specialty: Eclectic & Vintage</p>
-            <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">"I love telling my clients' stories by blending vintage finds with bold colors and modern art."</p>
-            <button class="px-6 py-2 border-2 border-terracotta text-terracotta hover:bg-terracotta hover:text-white rounded-full font-bold transition duration-300">
-              View Portfolio
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 relative overflow-hidden bg-cream/20 dark:bg-[#1a2310] transition-colors duration-300">
+  <section class="py-20 relative overflow-hidden bg-cream/20 dark:bg-[#32201A] transition-colors duration-300">
     <div class="absolute top-0 right-0 w-64 h-64 bg-terracotta/10 rounded-full blur-3xl z-0"></div>
-    <div class="absolute bottom-0 left-0 w-80 h-80 bg-olive/10 rounded-full blur-3xl z-0"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-brand-brown/10 rounded-full blur-3xl z-0"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="text-center mb-16">
@@ -370,7 +317,7 @@
 
       <div class="grid md:grid-cols-3 gap-8">
         
-        <div class="bg-white/80 dark:bg-dark-brown/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 dark:border-olive/20 shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center group">
+        <div class="bg-white/80 dark:bg-dark-brown/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 dark:border-brand-brown/20 shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center group">
           <div class="w-20 h-20 mx-auto bg-cream dark:bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-terracotta transition-colors duration-300">
             <i class="fas fa-clock text-3xl text-terracotta group-hover:text-white transition-colors duration-300 animate-float"></i>
           </div>
@@ -378,7 +325,7 @@
           <p class="text-gray-600 dark:text-gray-400 text-sm">Skip the showrooms. We bring the entire design process, from concept to shopping list, right to your inbox.</p>
         </div>
 
-        <div class="bg-white/80 dark:bg-dark-brown/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 dark:border-olive/20 shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center group">
+        <div class="bg-white/80 dark:bg-dark-brown/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 dark:border-brand-brown/20 shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center group">
           <div class="w-20 h-20 mx-auto bg-cream dark:bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-terracotta transition-colors duration-300">
             <i class="fas fa-piggy-bank text-3xl text-terracotta group-hover:text-white transition-colors duration-300 animate-float" style="animation-delay: 0.5s;"></i>
           </div>
@@ -386,7 +333,7 @@
           <p class="text-gray-600 dark:text-gray-400 text-sm">No hourly rates or hidden fees. Know exactly what you'll pay upfront with our transparent room packages.</p>
         </div>
 
-        <div class="bg-white/80 dark:bg-dark-brown/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 dark:border-olive/20 shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center group">
+        <div class="bg-white/80 dark:bg-dark-brown/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 dark:border-brand-brown/20 shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center group">
           <div class="w-20 h-20 mx-auto bg-cream dark:bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-terracotta transition-colors duration-300">
             <i class="fas fa-gem text-3xl text-terracotta group-hover:text-white transition-colors duration-300 animate-float" style="animation-delay: 1s;"></i>
           </div>
@@ -407,7 +354,7 @@
 
       <div class="grid md:grid-cols-3 gap-8">
         
-        <div class="bg-gray-50 dark:bg-dark-brown/80 rounded-2xl p-8 border border-gray-200 dark:border-olive/30 hover:border-terracotta transition-colors relative">
+        <div class="bg-gray-50 dark:bg-dark-brown/80 rounded-2xl p-8 border border-gray-200 dark:border-brand-brown/30 hover:border-terracotta transition-colors relative">
           <h3 class="text-2xl font-bold text-dark-brown dark:text-white mb-2">Room Refresh</h3>
           <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">Perfect for finishing touches and styling updates.</p>
           <div class="mb-6">
@@ -415,9 +362,9 @@
             <span class="text-gray-500 dark:text-gray-400">/room</span>
           </div>
           <ul class="space-y-4 mb-8">
-            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-olive mt-1 mr-3"></i> 1 Concept Moodboard</li>
-            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-olive mt-1 mr-3"></i> Shoppable Product Links</li>
-            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-olive mt-1 mr-3"></i> 1 Week Designer Chat Support</li>
+            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-brand-brown mt-1 mr-3"></i> 1 Concept Moodboard</li>
+            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-brand-brown mt-1 mr-3"></i> Shoppable Product Links</li>
+            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-brand-brown mt-1 mr-3"></i> 1 Week Designer Chat Support</li>
             <li class="flex items-start text-sm text-gray-400 dark:text-gray-600 line-through"><i class="fas fa-times mt-1 mr-3"></i> 3D Renderings</li>
             <li class="flex items-start text-sm text-gray-400 dark:text-gray-600 line-through"><i class="fas fa-times mt-1 mr-3"></i> Custom Floor Plan</li>
           </ul>
@@ -433,16 +380,16 @@
             <span class="text-gray-500 dark:text-gray-400">/room</span>
           </div>
           <ul class="space-y-4 mb-8">
-            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-olive mt-1 mr-3"></i> 2 Concept Moodboards</li>
-            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-olive mt-1 mr-3"></i> Photorealistic 3D Renderings</li>
-            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-olive mt-1 mr-3"></i> Scaled Floor Plan Layout</li>
-            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-olive mt-1 mr-3"></i> Shoppable Links + Trade Discounts</li>
-            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-olive mt-1 mr-3"></i> 3 Weeks Designer Chat Support</li>
+            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-brand-brown mt-1 mr-3"></i> 2 Concept Moodboards</li>
+            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-brand-brown mt-1 mr-3"></i> Photorealistic 3D Renderings</li>
+            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-brand-brown mt-1 mr-3"></i> Scaled Floor Plan Layout</li>
+            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-brand-brown mt-1 mr-3"></i> Shoppable Links + Trade Discounts</li>
+            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-brand-brown mt-1 mr-3"></i> 3 Weeks Designer Chat Support</li>
           </ul>
-          <a href="#" class="block w-full py-3 px-4 bg-terracotta text-white text-center font-bold rounded-xl hover:bg-olive transition duration-300 shadow-md">Select Plan</a>
+          <a href="#" class="block w-full py-3 px-4 bg-terracotta text-white text-center font-bold rounded-xl hover:bg-brand-brown transition duration-300 shadow-md">Select Plan</a>
         </div>
 
-        <div class="bg-gray-50 dark:bg-dark-brown/80 rounded-2xl p-8 border border-gray-200 dark:border-olive/30 hover:border-terracotta transition-colors relative">
+        <div class="bg-gray-50 dark:bg-dark-brown/80 rounded-2xl p-8 border border-gray-200 dark:border-brand-brown/30 hover:border-terracotta transition-colors relative">
           <h3 class="text-2xl font-bold text-dark-brown dark:text-white mb-2">Open Concept</h3>
           <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">For connected spaces like living/dining combos.</p>
           <div class="mb-6">
@@ -450,11 +397,11 @@
             <span class="text-gray-500 dark:text-gray-400">/space</span>
           </div>
           <ul class="space-y-4 mb-8">
-            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-olive mt-1 mr-3"></i> Everything in Full Room</li>
-            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-olive mt-1 mr-3"></i> Multi-zone Space Planning</li>
-            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-olive mt-1 mr-3"></i> Paint & Wall Treatment Guide</li>
-            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-olive mt-1 mr-3"></i> Video Call Kickoff</li>
-            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-olive mt-1 mr-3"></i> Unlimited Revisions (14 Days)</li>
+            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-brand-brown mt-1 mr-3"></i> Everything in Full Room</li>
+            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-brand-brown mt-1 mr-3"></i> Multi-zone Space Planning</li>
+            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-brand-brown mt-1 mr-3"></i> Paint & Wall Treatment Guide</li>
+            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-brand-brown mt-1 mr-3"></i> Video Call Kickoff</li>
+            <li class="flex items-start text-sm text-gray-700 dark:text-gray-300"><i class="fas fa-check text-brand-brown mt-1 mr-3"></i> Unlimited Revisions (14 Days)</li>
           </ul>
           <a href="#" class="block w-full py-3 px-4 bg-white dark:bg-dark-brown border-2 border-terracotta text-terracotta text-center font-bold rounded-xl hover:bg-terracotta hover:text-white transition duration-300">Select Plan</a>
         </div>
@@ -472,7 +419,7 @@
       <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Ready to redesign your space?</h2>
       <p class="text-lg md:text-xl text-gray-300 mb-10">Take the guesswork out of decorating. Collaborate with an expert and get a home you'll love waking up in.</p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="contact.html" class="px-8 py-4 bg-terracotta hover:bg-olive text-white rounded-full font-bold text-lg transition duration-300 shadow-[0_0_20px_rgba(188,108,37,0.4)]">
+        <a href="contact.html" class="px-8 py-4 bg-terracotta hover:bg-brand-brown text-white rounded-full font-bold text-lg transition duration-300 shadow-[0_0_20px_rgba(188,108,37,0.4)]">
           Start Your Project
         </a>
         <a href="quiz.html" class="px-8 py-4 bg-transparent border-2 border-white/50 hover:bg-white/10 text-white rounded-full font-bold text-lg transition duration-300">
