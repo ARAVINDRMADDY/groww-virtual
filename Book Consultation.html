@@ -16,8 +16,8 @@
         extend: {
           colors: {
             terracotta: '#BC6C25',
-            olive: '#606C38',
-            'dark-brown': '#283618',
+            'brand-brown': '#795548',
+            'dark-brown': '#3E2723',
             cream: '#F6F1E9',
             white: '#FFFFFF'
           },
@@ -67,7 +67,7 @@
     }
   </style>
 </head>
-<body class="font-sans antialiased transition-colors duration-300 bg-[#fbfbfb] dark:bg-[#1a2310] flex flex-col min-h-screen">
+<body class="font-sans antialiased transition-colors duration-300 bg-[#fbfbfb] dark:bg-dark-brown flex flex-col min-h-screen">
 
   <nav class="bg-white dark:bg-dark-brown fixed w-full top-0 z-50 shadow-lg border-b border-terracotta/20 transition-colors duration-300">
     <div class="max-w-[1400px] mx-auto nav-container px-4 sm:px-6 lg:px-8">
@@ -89,7 +89,7 @@
                 <span class="text-sm">Home</span>
                 <i class="fas fa-chevron-down text-xs"></i>
               </button>
-              <div class="absolute start-0 mt-2 w-48 bg-white dark:bg-dark-brown border dark:border-olive/30 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
+              <div class="absolute start-0 mt-2 w-48 bg-white dark:bg-dark-brown border dark:border-brand-brown/30 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
                 <a href="index.html" class="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-cream/50 dark:hover:bg-cream/20 hover:text-terracotta transition duration-300 rounded-t-md">Home Page 1</a>
                 <a href="home-2.html" class="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-cream/50 dark:hover:bg-cream/20 hover:text-terracotta transition duration-300 rounded-b-md">Home Page 2</a>
               </div>
@@ -109,7 +109,7 @@
                 <span class="text-sm">Dashboard</span>
                 <i class="fas fa-chevron-down text-xs"></i>
               </button>
-              <div class="absolute end-0 mt-2 w-56 bg-white dark:bg-dark-brown border dark:border-olive/30 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
+              <div class="absolute end-0 mt-2 w-56 bg-white dark:bg-dark-brown border dark:border-brand-brown/30 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
                 <a href="admin-dashboard.html" class="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-cream/50 dark:hover:bg-cream/20 hover:text-terracotta transition duration-300 rounded-t-md">
                   <i class="fas fa-user-shield me-2"></i>Admin Dashboard
                 </a>
@@ -126,7 +126,7 @@
           <a href="login.html" class="nav-button text-gray-800 dark:text-white hover:text-terracotta px-3 py-2 rounded-lg font-medium transition duration-300 text-sm flex items-center space-x-1">
             <span>Login</span>
           </a>
-          <a href="register.html" class="nav-button bg-terracotta hover:bg-olive text-white px-5 py-2.5 rounded-full font-medium transition duration-300 text-sm flex items-center space-x-2 shadow-md whitespace-nowrap">
+          <a href="register.html" class="nav-button bg-terracotta hover:bg-brand-brown text-white px-5 py-2.5 rounded-full font-medium transition duration-300 text-sm flex items-center space-x-2 shadow-md whitespace-nowrap">
             <i class="fas fa-user-plus"></i>
             <span>Register</span>
           </a>
@@ -192,7 +192,7 @@
         <div class="pt-3 border-t border-gray-200 dark:border-white/10 mt-3 space-y-2">
           <div class="grid grid-cols-2 gap-2">
             <a href="login.html" class="block w-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 text-sm">Login</a>
-            <a href="register.html" class="block w-full bg-terracotta hover:bg-olive text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 shadow-md text-sm">Register</a>
+            <a href="register.html" class="block w-full bg-terracotta hover:bg-brand-brown text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 shadow-md text-sm">Register</a>
           </div>
 
           <div class="grid grid-cols-2 gap-2 mt-2">
@@ -234,7 +234,7 @@
         <div class="grid lg:grid-cols-12 gap-8 lg:gap-12">
           
           <div class="hidden lg:block lg:col-span-4">
-            <div class="sticky top-28 bg-white/80 dark:bg-dark-brown/80 backdrop-blur-xl rounded-3xl p-8 shadow-premium border border-white dark:border-olive/30">
+            <div class="sticky top-28 bg-white/80 dark:bg-dark-brown/80 backdrop-blur-xl rounded-3xl p-8 shadow-premium border border-white dark:border-brand-brown/30">
               <h3 class="text-2xl font-extrabold text-dark-brown dark:text-white mb-2">Project Summary</h3>
               <p class="text-gray-500 dark:text-gray-400 text-sm mb-8">Your selections will build your personalized design blueprint.</p>
               
@@ -283,7 +283,7 @@
 
           <div class="col-span-12 lg:col-span-8 space-y-10">
             
-            <div class="bg-white dark:bg-dark-brown rounded-3xl p-8 md:p-10 shadow-premium border border-gray-100 dark:border-olive/30 opacity-0" style="animation: fadeInUp 0.8s ease-out 0.1s forwards;">
+            <div class="bg-white dark:bg-dark-brown rounded-3xl p-8 md:p-10 shadow-premium border border-gray-100 dark:border-brand-brown/30 opacity-0" style="animation: fadeInUp 0.8s ease-out 0.1s forwards;">
               <h2 class="text-3xl font-extrabold text-dark-brown dark:text-white mb-2">Tell Us About Your Space</h2>
               <p class="text-gray-500 dark:text-gray-400 mb-10">Select the options that best describe your upcoming project.</p>
 
@@ -292,7 +292,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <label class="cursor-pointer relative">
                     <input type="radio" name="projectType" value="home" class="peer sr-only" required>
-                    <div class="option-card p-6 border-2 border-gray-100 dark:border-gray-700 rounded-2xl text-center bg-gray-50 dark:bg-[#1d2711]">
+                    <div class="option-card p-6 border-2 border-gray-100 dark:border-gray-700 rounded-2xl text-center bg-gray-50 dark:bg-[#32201A]">
                       <div class="w-14 h-14 mx-auto bg-white dark:bg-dark-brown rounded-full flex items-center justify-center mb-4 shadow-sm text-gray-400 dark:text-gray-500 peer-checked:text-terracotta transition-colors">
                         <i class="fas fa-home text-2xl"></i>
                       </div>
@@ -304,7 +304,7 @@
                   
                   <label class="cursor-pointer relative">
                     <input type="radio" name="projectType" value="office" class="peer sr-only">
-                    <div class="option-card p-6 border-2 border-gray-100 dark:border-gray-700 rounded-2xl text-center bg-gray-50 dark:bg-[#1d2711]">
+                    <div class="option-card p-6 border-2 border-gray-100 dark:border-gray-700 rounded-2xl text-center bg-gray-50 dark:bg-[#32201A]">
                       <div class="w-14 h-14 mx-auto bg-white dark:bg-dark-brown rounded-full flex items-center justify-center mb-4 shadow-sm text-gray-400 dark:text-gray-500 peer-checked:text-terracotta transition-colors">
                         <i class="fas fa-building text-2xl"></i>
                       </div>
@@ -316,7 +316,7 @@
 
                   <label class="cursor-pointer relative">
                     <input type="radio" name="projectType" value="retail" class="peer sr-only">
-                    <div class="option-card p-6 border-2 border-gray-100 dark:border-gray-700 rounded-2xl text-center bg-gray-50 dark:bg-[#1d2711]">
+                    <div class="option-card p-6 border-2 border-gray-100 dark:border-gray-700 rounded-2xl text-center bg-gray-50 dark:bg-[#32201A]">
                       <div class="w-14 h-14 mx-auto bg-white dark:bg-dark-brown rounded-full flex items-center justify-center mb-4 shadow-sm text-gray-400 dark:text-gray-500 peer-checked:text-terracotta transition-colors">
                         <i class="fas fa-store text-2xl"></i>
                       </div>
@@ -331,7 +331,7 @@
               <div>
                 <label for="budget" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-4 uppercase tracking-wider">2. Estimated Furniture Budget</label>
                 <div class="relative">
-                  <select id="budget" name="budget" required class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#1d2711] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white font-medium appearance-none cursor-pointer focus:ring-terracotta">
+                  <select id="budget" name="budget" required class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#32201A] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white font-medium appearance-none cursor-pointer focus:ring-terracotta">
                     <option value="" disabled selected>Select your target budget for furnishings...</option>
                     <option value="under_3k">Under $3,000 (I already have pieces to keep)</option>
                     <option value="3k_to_10k">$3,000 - $10,000 (Standard Room Refresh)</option>
@@ -345,7 +345,7 @@
               </div>
             </div>
 
-            <div class="bg-white dark:bg-dark-brown rounded-3xl p-8 md:p-10 shadow-premium border border-gray-100 dark:border-olive/30 opacity-0" style="animation: fadeInUp 0.8s ease-out 0.2s forwards;">
+            <div class="bg-white dark:bg-dark-brown rounded-3xl p-8 md:p-10 shadow-premium border border-gray-100 dark:border-brand-brown/30 opacity-0" style="animation: fadeInUp 0.8s ease-out 0.2s forwards;">
               <h2 class="text-3xl font-extrabold text-dark-brown dark:text-white mb-2">Inspiration & Aesthetics</h2>
               <p class="text-gray-500 dark:text-gray-400 mb-10">Help us nail down the perfect look and feel.</p>
 
@@ -400,7 +400,7 @@
                 <div>
                   <label for="colorPalette" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-4 uppercase tracking-wider">4. Color Palette</label>
                   <div class="relative">
-                    <select id="colorPalette" name="colorPalette" class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#1d2711] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white font-medium appearance-none cursor-pointer focus:ring-terracotta">
+                    <select id="colorPalette" name="colorPalette" class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#32201A] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white font-medium appearance-none cursor-pointer focus:ring-terracotta">
                       <option value="neutrals">Warm Neutrals & Creams</option>
                       <option value="monochrome">Bold Monochrome (Black/White)</option>
                       <option value="earthy">Earthy (Olive, Terracotta, Ochre)</option>
@@ -414,12 +414,12 @@
                 
                 <div>
                   <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-4 uppercase tracking-wider">5. Pinterest Board Link</label>
-                  <input type="url" name="pinterestLink" placeholder="https://pinterest.com/your-board" class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#1d2711] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors duration-300">
+                  <input type="url" name="pinterestLink" placeholder="https://pinterest.com/your-board" class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#32201A] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors duration-300">
                 </div>
               </div>
             </div>
 
-            <div class="bg-white dark:bg-dark-brown rounded-3xl p-8 md:p-10 shadow-premium border border-gray-100 dark:border-olive/30 opacity-0" style="animation: fadeInUp 0.8s ease-out 0.3s forwards;">
+            <div class="bg-white dark:bg-dark-brown rounded-3xl p-8 md:p-10 shadow-premium border border-gray-100 dark:border-brand-brown/30 opacity-0" style="animation: fadeInUp 0.8s ease-out 0.3s forwards;">
               <div class="mb-8">
                 <h2 class="text-2xl font-bold text-dark-brown dark:text-white mb-2">Project Timeline</h2>
                 <p class="text-gray-600 dark:text-gray-400 text-sm">How do you prefer to communicate, and how fast do you need the design?</p>
@@ -430,14 +430,14 @@
                 <div>
                   <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-4">Project Urgency</label>
                   <div class="space-y-3">
-                    <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-xl cursor-pointer hover:bg-gray-50 dark:hover:bg-[#1d2711] transition">
+                    <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-xl cursor-pointer hover:bg-gray-50 dark:hover:bg-[#32201A] transition">
                       <input type="radio" name="urgency" value="standard" checked class="text-terracotta focus:ring-terracotta w-4 h-4">
                       <div class="ms-3">
                         <span class="block font-bold text-gray-900 dark:text-white text-sm">Standard Delivery</span>
                         <span class="block text-xs text-gray-500">14-21 Days (Normal Pricing)</span>
                       </div>
                     </label>
-                    <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-xl cursor-pointer hover:bg-gray-50 dark:hover:bg-[#1d2711] transition">
+                    <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-xl cursor-pointer hover:bg-gray-50 dark:hover:bg-[#32201A] transition">
                       <input type="radio" name="urgency" value="express" class="text-terracotta focus:ring-terracotta w-4 h-4">
                       <div class="ms-3">
                         <span class="block font-bold text-gray-900 dark:text-white text-sm">Express Delivery <i class="fas fa-bolt text-yellow-500 ms-1"></i></span>
@@ -450,14 +450,14 @@
                 <div>
                   <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-4">Preferred Communication</label>
                   <div class="space-y-3">
-                    <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-xl cursor-pointer hover:bg-gray-50 dark:hover:bg-[#1d2711] transition">
+                    <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-xl cursor-pointer hover:bg-gray-50 dark:hover:bg-[#32201A] transition">
                       <input type="radio" name="communication" value="video" checked class="text-terracotta focus:ring-terracotta w-4 h-4">
                       <div class="ms-3">
                         <span class="block font-bold text-gray-900 dark:text-white text-sm">Video Calls & Emails</span>
                         <span class="block text-xs text-gray-500">Best for visual feedback</span>
                       </div>
                     </label>
-                    <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-xl cursor-pointer hover:bg-gray-50 dark:hover:bg-[#1d2711] transition">
+                    <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-xl cursor-pointer hover:bg-gray-50 dark:hover:bg-[#32201A] transition">
                       <input type="radio" name="communication" value="chat" class="text-terracotta focus:ring-terracotta w-4 h-4">
                       <div class="ms-3">
                         <span class="block font-bold text-gray-900 dark:text-white text-sm">Chat / Messaging App</span>
@@ -478,7 +478,7 @@
 
             </div>
 
-            <div class="bg-white dark:bg-dark-brown rounded-3xl p-8 md:p-10 shadow-premium border border-gray-100 dark:border-olive/30 opacity-0" style="animation: fadeInUp 0.8s ease-out 0.4s forwards;">
+            <div class="bg-white dark:bg-dark-brown rounded-3xl p-8 md:p-10 shadow-premium border border-gray-100 dark:border-brand-brown/30 opacity-0" style="animation: fadeInUp 0.8s ease-out 0.4s forwards;">
               <div class="mb-8 border-b border-gray-100 dark:border-gray-700 pb-6">
                 <h2 class="text-2xl font-bold text-dark-brown dark:text-white mb-2">Schedule Your Free Discovery Call</h2>
                 <p class="text-gray-600 dark:text-gray-400 text-sm">Let's chat! Pick a time and provide your details so we can discuss your project—no payment required.</p>
@@ -487,34 +487,34 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>
                   <label for="consultDate" class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Preferred Date</label>
-                  <input type="date" id="consultDate" name="consultDate" required class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#1d2711] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors">
+                  <input type="date" id="consultDate" name="consultDate" required class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#32201A] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors">
                 </div>
                 <div>
                   <label for="consultTime" class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Preferred Time</label>
-                  <input type="time" id="consultTime" name="consultTime" required class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#1d2711] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors">
+                  <input type="time" id="consultTime" name="consultTime" required class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#32201A] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors">
                 </div>
               </div>
 
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>
                   <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">First Name</label>
-                  <input type="text" required placeholder="John" class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#1d2711] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors">
+                  <input type="text" required placeholder="John" class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#32201A] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors">
                 </div>
                 <div>
                   <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Last Name</label>
-                  <input type="text" required placeholder="Doe" class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#1d2711] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors">
+                  <input type="text" required placeholder="Doe" class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#32201A] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors">
                 </div>
                 <div>
                   <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
-                  <input type="email" required placeholder="john@example.com" class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#1d2711] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors">
+                  <input type="email" required placeholder="john@example.com" class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#32201A] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors">
                 </div>
                 <div>
                   <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Phone Number</label>
-                  <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#1d2711] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors">
+                  <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full px-5 py-4 rounded-2xl bg-gray-50 dark:bg-[#32201A] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white transition-colors">
                 </div>
               </div>
 
-              <button type="submit" class="w-full mt-4 bg-terracotta hover:bg-olive text-white font-extrabold py-5 rounded-xl transition duration-300 shadow-glow hover:shadow-xl flex justify-center items-center group text-lg">
+              <button type="submit" class="w-full mt-4 bg-terracotta hover:bg-brand-brown text-white font-extrabold py-5 rounded-xl transition duration-300 shadow-glow hover:shadow-xl flex justify-center items-center group text-lg">
                 <span>Confirm Free Consultation</span>
                 <i class="fas fa-check-circle ms-3 transform group-hover:scale-110 transition-transform"></i>
               </button>
