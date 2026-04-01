@@ -17,7 +17,8 @@
           colors: {
             terracotta: '#BC6C25',
             'brand-brown': '#795548',
-            'dark-brown': '#3E2723',
+            'dark-brown': '#3E2723', /* Kept for light mode text accents */
+            'dark-bg': '#121212',    /* Added standard dark grey/black for better visibility */
             cream: '#F6F1E9',
             white: '#FFFFFF'
           }
@@ -41,9 +42,9 @@
     }
   </style>
 </head>
-<body class="font-sans antialiased transition-colors duration-300 bg-white dark:bg-dark-brown flex flex-col min-h-screen">
+<body class="font-sans antialiased transition-colors duration-300 bg-white dark:bg-dark-bg flex flex-col min-h-screen">
 
-  <nav class="bg-white dark:bg-dark-brown fixed w-full top-0 z-50 shadow-lg border-b border-terracotta/20 transition-colors duration-300">
+  <nav class="bg-white dark:bg-dark-bg fixed w-full top-0 z-50 shadow-lg border-b border-terracotta/20 transition-colors duration-300">
     <div class="max-w-[1400px] mx-auto nav-container px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
 
@@ -63,7 +64,7 @@
                 <span class="text-sm">Home</span>
                 <i class="fas fa-chevron-down text-xs"></i>
               </button>
-              <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-dark-brown border dark:border-brand-brown/30 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
+              <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-dark-bg border dark:border-brand-brown/30 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
                 <a href="index.html" class="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-cream/50 dark:hover:bg-cream/20 hover:text-terracotta transition duration-300 rounded-t-md">Home Page 1</a>
                 <a href="home-2.html" class="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-cream/50 dark:hover:bg-cream/20 hover:text-terracotta transition duration-300 rounded-b-md">Home Page 2</a>
               </div>
@@ -83,7 +84,7 @@
                 <span class="text-sm">Dashboard</span>
                 <i class="fas fa-chevron-down text-xs"></i>
               </button>
-              <div class="absolute right-0 mt-2 w-56 bg-white dark:bg-dark-brown border dark:border-brand-brown/30 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
+              <div class="absolute right-0 mt-2 w-56 bg-white dark:bg-dark-bg border dark:border-brand-brown/30 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
                 <a href="admin-dashboard.html" class="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-cream/50 dark:hover:bg-cream/20 hover:text-terracotta transition duration-300 rounded-t-md">
                   <i class="fas fa-user-shield mr-2"></i>Admin Dashboard
                 </a>
@@ -127,7 +128,7 @@
       </div>
     </div>
 
-    <div id="mobile-menu" class="hidden xl:hidden bg-white dark:bg-dark-brown border-t border-gray-200 dark:border-white/10 transition-colors duration-300">
+    <div id="mobile-menu" class="hidden xl:hidden bg-white dark:bg-dark-bg border-t border-gray-200 dark:border-white/10 transition-colors duration-300">
       <div class="px-4 pt-2 pb-4 space-y-1 max-h-[calc(100vh-80px)] overflow-y-auto">
         <div>
           <button id="mobile-home-dropdown" class="w-full flex items-center justify-between px-4 py-3 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-white/10 rounded-lg transition duration-300">
@@ -191,7 +192,7 @@
   <section class="pt-32 pb-16 text-white relative overflow-hidden min-h-screen flex items-center">
     <div class="absolute inset-0 z-0">
       <img src="images/pexels-kindelmedia-7688081.jpg" alt="Blog Background" class="w-full h-full object-cover">
-      <div class="absolute inset-0 bg-dark-brown/70"></div>
+      <div class="absolute inset-0 bg-dark-bg/70"></div>
     </div>
 
     <div class="absolute top-0 right-0 w-64 h-64 bg-terracotta/20 rounded-full blur-3xl z-0"></div>
@@ -209,7 +210,7 @@
     </div>
   </section>
 
-  <section class="py-16 bg-gray-50 dark:bg-[#32201A]">
+  <section class="py-16 bg-gray-50 dark:bg-[#1A1A1A]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="w-full">
@@ -219,10 +220,10 @@
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           
-          <article class="blog-card bg-white dark:bg-dark-brown rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
+          <article class="blog-card bg-white dark:bg-dark-bg rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Small Space Design" class="w-full h-full object-cover transition-transform duration-500 blog-image">
-              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-brown/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
                 Small Spaces
               </div>
             </div>
@@ -244,10 +245,10 @@
             </div>
           </article>
 
-          <article class="blog-card bg-white dark:bg-dark-brown rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
+          <article class="blog-card bg-white dark:bg-dark-bg rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Budget Interior Ideas" class="w-full h-full object-cover transition-transform duration-500 blog-image">
-              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-brown/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
                 Budget Decor
               </div>
             </div>
@@ -269,10 +270,10 @@
             </div>
           </article>
 
-          <article class="blog-card bg-white dark:bg-dark-brown rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
+          <article class="blog-card bg-white dark:bg-dark-bg rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Color Theory" class="w-full h-full object-cover transition-transform duration-500 blog-image">
-              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-brown/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
                 Color Theory
               </div>
             </div>
@@ -294,10 +295,10 @@
             </div>
           </article>
 
-          <article class="blog-card bg-white dark:bg-dark-brown rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
+          <article class="blog-card bg-white dark:bg-dark-bg rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Texture Layering" class="w-full h-full object-cover transition-transform duration-500 blog-image">
-              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-brown/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
                 Home Styling
               </div>
             </div>
@@ -319,10 +320,10 @@
             </div>
           </article>
 
-          <article class="blog-card bg-white dark:bg-dark-brown rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
+          <article class="blog-card bg-white dark:bg-dark-bg rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Biophilic Design" class="w-full h-full object-cover transition-transform duration-500 blog-image">
-              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-brown/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
                 Wellness
               </div>
             </div>
@@ -344,10 +345,10 @@
             </div>
           </article>
 
-          <article class="blog-card bg-white dark:bg-dark-brown rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
+          <article class="blog-card bg-white dark:bg-dark-bg rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Lighting Guide" class="w-full h-full object-cover transition-transform duration-500 blog-image">
-              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-brown/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
                 Lighting
               </div>
             </div>
@@ -369,10 +370,10 @@
             </div>
           </article>
 
-          <article class="blog-card bg-white dark:bg-dark-brown rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
+          <article class="blog-card bg-white dark:bg-dark-bg rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rug Sizing" class="w-full h-full object-cover transition-transform duration-500 blog-image">
-              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-brown/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
                 Space Planning
               </div>
             </div>
@@ -394,10 +395,10 @@
             </div>
           </article>
 
-          <article class="blog-card bg-white dark:bg-dark-brown rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
+          <article class="blog-card bg-white dark:bg-dark-bg rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-brand-brown/30 transition-all duration-300 flex flex-col h-full">
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Minimalist Design" class="w-full h-full object-cover transition-transform duration-500 blog-image">
-              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-brown/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              <div class="absolute top-4 right-4 bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm text-terracotta text-xs font-bold px-3 py-1 rounded-full shadow-sm">
                 Organization
               </div>
             </div>
@@ -423,12 +424,12 @@
 
         <div class="flex justify-center mt-12">
           <nav class="flex items-center space-x-2">
-            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-dark-brown border border-gray-200 dark:border-brand-brown/30 text-gray-500 hover:bg-terracotta hover:text-white hover:border-terracotta transition-colors"><i class="fas fa-chevron-left text-sm"></i></a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-dark-bg border border-gray-200 dark:border-brand-brown/30 text-gray-500 hover:bg-terracotta hover:text-white hover:border-terracotta transition-colors"><i class="fas fa-chevron-left text-sm"></i></a>
             <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-terracotta text-white border border-terracotta font-medium transition-colors">1</a>
-            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-dark-brown border border-gray-200 dark:border-brand-brown/30 text-gray-600 dark:text-gray-300 hover:bg-terracotta hover:text-white hover:border-terracotta font-medium transition-colors">2</a>
-            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-dark-brown border border-gray-200 dark:border-brand-brown/30 text-gray-600 dark:text-gray-300 hover:bg-terracotta hover:text-white hover:border-terracotta font-medium transition-colors">3</a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-dark-bg border border-gray-200 dark:border-brand-brown/30 text-gray-600 dark:text-gray-300 hover:bg-terracotta hover:text-white hover:border-terracotta font-medium transition-colors">2</a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-dark-bg border border-gray-200 dark:border-brand-brown/30 text-gray-600 dark:text-gray-300 hover:bg-terracotta hover:text-white hover:border-terracotta font-medium transition-colors">3</a>
             <span class="text-gray-500">...</span>
-            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-dark-brown border border-gray-200 dark:border-brand-brown/30 text-gray-500 hover:bg-terracotta hover:text-white hover:border-terracotta transition-colors"><i class="fas fa-chevron-right text-sm"></i></a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-dark-bg border border-gray-200 dark:border-brand-brown/30 text-gray-500 hover:bg-terracotta hover:text-white hover:border-terracotta transition-colors"><i class="fas fa-chevron-right text-sm"></i></a>
           </nav>
         </div>
       </div>
@@ -436,10 +437,10 @@
     </div>
   </section>
 
-  <section class="py-20 bg-brand-brown relative overflow-hidden">
+  <section class="py-20 bg-brand-brown dark:bg-[#1A1A1A] relative overflow-hidden transition-colors duration-300">
     <div class="absolute inset-0 opacity-20 pointer-events-none">
       <div class="absolute top-0 left-0 w-96 h-96 bg-terracotta rounded-full mix-blend-multiply filter blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
-      <div class="absolute bottom-0 right-0 w-96 h-96 bg-dark-brown rounded-full mix-blend-multiply filter blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-dark-bg rounded-full mix-blend-multiply filter blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
     </div>
     
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-fade-in">
@@ -451,7 +452,7 @@
       
       <form class="flex flex-col sm:flex-row max-w-lg mx-auto gap-3">
         <input type="email" placeholder="Enter your email address" required class="flex-1 px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-terracotta focus:ring-1 focus:ring-terracotta transition-all">
-        <button type="submit" class="px-8 py-4 bg-terracotta hover:bg-dark-brown text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 whitespace-nowrap">
+        <button type="submit" class="px-8 py-4 bg-terracotta hover:bg-white hover:text-dark-bg text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 whitespace-nowrap">
           Subscribe Now
         </button>
       </form>
@@ -459,7 +460,7 @@
     </div>
   </section>
 
-  <footer class="bg-dark-brown text-white pt-16 pb-10 mt-auto border-t border-white/10 relative z-10">
+  <footer class="bg-dark-bg text-white pt-16 pb-10 mt-auto relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">

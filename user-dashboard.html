@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Client Dashboard -Virtual Interior Design</title>
+  <title>Client Dashboard - Virtual Interior Design</title>
   <link rel="icon" type="image/jpeg" href="images/growwpark_logo.jpg">
   <script src="tailwind.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,7 +17,7 @@
           colors: {
             terracotta: '#BC6C25',
             olive: '#606C38',
-            'dark-brown': '#283618',
+            'dark-bg': '#121212', /* Added standard dark grey/black for better visibility */
             cream: '#F6F1E9',
             white: '#FFFFFF'
           }
@@ -69,13 +69,13 @@
     }
   </style>
 </head>
-<body class="font-sans antialiased bg-gray-50 dark:bg-dark-brown text-gray-800 dark:text-gray-100 transition-colors duration-300">
+<body class="font-sans antialiased bg-gray-50 dark:bg-dark-bg text-gray-800 dark:text-gray-100 transition-colors duration-300">
 
-  <div class="flex h-screen overflow-hidden bg-gray-100 dark:bg-[#1d2711]">
+  <div class="flex h-screen overflow-hidden bg-gray-100 dark:bg-dark-bg">
 
     <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden backdrop-blur-sm transition-opacity opacity-0"></div>
 
-    <aside id="sidebar" class="fixed inset-y-0 left-0 z-50 w-64 bg-dark-brown border-r border-terracotta/20 text-white sidebar-closed lg:!translate-x-0 sidebar-transition shadow-2xl flex flex-col">
+    <aside id="sidebar" class="fixed inset-y-0 left-0 z-50 w-64 bg-gray-900 dark:bg-[#1A1A1A] border-r border-terracotta/20 text-white sidebar-closed lg:!translate-x-0 sidebar-transition shadow-2xl flex flex-col">
       
       <div class="h-16 md:h-20 flex items-center justify-center border-b border-terracotta/20 px-6 shrink-0">
         <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
@@ -116,7 +116,7 @@
         </a>
       </nav>
 
-      <div class="p-4 border-t border-terracotta/20 bg-black/20">
+      <div class="p-4 border-t border-terracotta/20 bg-black/20 dark:bg-[#121212]">
         <div class="flex items-center space-x-3 rtl:space-x-reverse p-2 rounded-xl hover:bg-white/5 transition-colors cursor-pointer">
           <img src="https://ui-avatars.com/api/?name=Jessica+Miller&background=F6F1E9&color=BC6C25" alt="User" class="w-9 h-9 rounded-full border border-terracotta">
           <div class="overflow-hidden">
@@ -130,10 +130,10 @@
 
     <div class="flex-1 flex flex-col lg:ml-64 min-w-0 transition-all duration-300">
       
-      <header class="h-16 md:h-20 bg-white dark:bg-dark-brown shadow-sm border-b border-gray-200 dark:border-olive/30 flex items-center justify-between px-4 md:px-8 z-30 sticky top-0">
+      <header class="h-16 md:h-20 bg-white dark:bg-[#1A1A1A] shadow-sm border-b border-gray-200 dark:border-white/10 flex items-center justify-between px-4 md:px-8 z-30 sticky top-0">
         
         <div class="flex items-center gap-4">
-          <button id="sidebar-toggle" class="lg:hidden p-2 ltr:-ml-2 rtl:-mr-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-olive/20 rounded-lg transition-colors focus:outline-none">
+          <button id="sidebar-toggle" class="lg:hidden p-2 ltr:-ml-2 rtl:-mr-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/10 rounded-lg transition-colors focus:outline-none">
             <i class="fas fa-bars text-xl"></i>
           </button>
           <h2 class="text-lg md:text-xl font-bold text-gray-800 dark:text-white truncate">Welcome back</h2>
@@ -141,11 +141,11 @@
 
         <div class="flex items-center gap-2 md:gap-4">
           
-          <button id="rtl-toggle" class="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-100 dark:bg-[#1d2711] hover:bg-gray-200 dark:hover:bg-olive/20 flex items-center justify-center text-gray-600 dark:text-gray-300 transition-all focus:outline-none font-bold text-xs" title="Toggle RTL/LTR">
+          <button id="rtl-toggle" class="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-100 dark:bg-[#121212] hover:bg-gray-200 dark:hover:bg-white/10 flex items-center justify-center text-gray-600 dark:text-gray-300 transition-all focus:outline-none font-bold text-xs" title="Toggle RTL/LTR">
             <span id="rtl-text">RTL</span>
           </button>
 
-          <button id="theme-toggle" class="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-100 dark:bg-[#1d2711] hover:bg-gray-200 dark:hover:bg-olive/20 flex items-center justify-center text-gray-600 dark:text-terracotta transition-all focus:outline-none">
+          <button id="theme-toggle" class="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-100 dark:bg-[#121212] hover:bg-gray-200 dark:hover:bg-white/10 flex items-center justify-center text-gray-600 dark:text-terracotta transition-all focus:outline-none">
             <i class="fas fa-moon dark:hidden text-sm md:text-base"></i>
             <i class="fas fa-sun hidden dark:inline text-sm md:text-base"></i>
           </button>
@@ -160,7 +160,7 @@
       <main class="flex-1 overflow-y-auto p-4 md:p-6 lg:p-8 scroll-smooth" id="main-scroll-area">
         
         <div id="section-status" class="content-section">
-          <div class="bg-dark-brown rounded-2xl p-6 mb-8 text-white shadow-lg relative overflow-hidden border border-terracotta/20">
+          <div class="bg-gray-900 dark:bg-[#1A1A1A] rounded-2xl p-6 mb-8 text-white shadow-lg relative overflow-hidden border border-gray-800 dark:border-white/10">
             <div class="absolute ltr:right-0 rtl:left-0 top-0 h-full w-1/3 bg-terracotta/10 ltr:skew-x-12 rtl:-skew-x-12 transform ltr:translate-x-12 rtl:-translate-x-12"></div>
             
             <div class="relative z-10">
@@ -191,7 +191,7 @@
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
-            <div class="bg-white dark:bg-dark-brown rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-olive/30 hover:shadow-md transition-shadow">
+            <div class="bg-white dark:bg-[#1A1A1A] rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-white/10 hover:shadow-md transition-shadow">
               <div class="flex justify-between items-start mb-4">
                 <div>
                   <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Furniture Budget</p>
@@ -206,7 +206,7 @@
               </div>
             </div>
 
-            <div class="bg-white dark:bg-dark-brown rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-olive/30 hover:shadow-md transition-shadow">
+            <div class="bg-white dark:bg-[#1A1A1A] rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-white/10 hover:shadow-md transition-shadow">
               <div class="flex justify-between items-start mb-4">
                 <div>
                   <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Outstanding Balance</p>
@@ -221,7 +221,7 @@
               </div>
             </div>
 
-            <div class="bg-white dark:bg-dark-brown rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-olive/30 hover:shadow-md transition-shadow">
+            <div class="bg-white dark:bg-[#1A1A1A] rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-white/10 hover:shadow-md transition-shadow">
               <div class="flex justify-between items-start mb-4">
                 <div>
                   <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">New 3D Renders</p>
@@ -238,7 +238,7 @@
               </div>
             </div>
 
-            <div class="bg-white dark:bg-dark-brown rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-olive/30 hover:shadow-md transition-shadow">
+            <div class="bg-white dark:bg-[#1A1A1A] rounded-2xl p-5 md:p-6 shadow-sm border border-gray-200 dark:border-white/10 hover:shadow-md transition-shadow">
               <div class="flex justify-between items-start mb-4">
                 <div>
                   <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Next Appointment</p>
@@ -256,14 +256,14 @@
         </div>
 
         <div id="section-updates" class="content-section grid grid-cols-1 xl:grid-cols-2 gap-6 mb-8">
-          <div class="bg-white dark:bg-dark-brown p-4 md:p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-olive/30">
+          <div class="bg-white dark:bg-[#1A1A1A] p-4 md:p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-white/10">
             <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">Furniture Budget Distribution</h3>
             <div class="relative h-64 w-full flex justify-center">
               <canvas id="budgetChart"></canvas>
             </div>
           </div>
 
-          <div class="bg-white dark:bg-dark-brown p-4 md:p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-olive/30 flex flex-col">
+          <div class="bg-white dark:bg-[#1A1A1A] p-4 md:p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-white/10 flex flex-col">
             <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">Designer Updates</h3>
             
             <div class="flex-1 overflow-y-auto ltr:pr-2 rtl:pl-2 space-y-6">
@@ -273,7 +273,7 @@
                   <div class="w-8 h-8 rounded-full bg-cream/50 dark:bg-terracotta/20 flex items-center justify-center text-terracotta z-10">
                     <i class="fas fa-truck text-xs"></i>
                   </div>
-                  <div class="h-full w-0.5 bg-gray-100 dark:bg-olive/40 -mb-6 mt-1"></div>
+                  <div class="h-full w-0.5 bg-gray-100 dark:bg-white/10 -mb-6 mt-1"></div>
                 </div>
                 <div class="pb-6">
                   <span class="text-xs text-gray-400">Today, 10:15 AM</span>
@@ -287,13 +287,13 @@
                   <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 z-10">
                     <i class="fas fa-cube text-xs"></i>
                   </div>
-                  <div class="h-full w-0.5 bg-gray-100 dark:bg-olive/40 -mb-6 mt-1"></div>
+                  <div class="h-full w-0.5 bg-gray-100 dark:bg-white/10 -mb-6 mt-1"></div>
                 </div>
                 <div class="pb-6">
                   <span class="text-xs text-gray-400">Yesterday, 3:45 PM</span>
                   <p class="font-medium text-gray-800 dark:text-white">3D Renders Uploaded</p>
                   <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Elena uploaded 3 new panoramic visual renders of your master suite based on the approved floor plan.</p>
-                  <button class="mt-2 text-xs bg-gray-100 dark:bg-[#1d2711] px-3 py-1.5 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-olive/30 transition-colors border border-gray-200 dark:border-olive/30">View Renders</button>
+                  <button class="mt-2 text-xs bg-gray-100 dark:bg-[#121212] px-3 py-1.5 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-white/10 transition-colors border border-gray-200 dark:border-white/10">View Renders</button>
                 </div>
               </div>
 
@@ -314,8 +314,8 @@
           </div>
         </div>
 
-        <div id="section-financials" class="content-section bg-white dark:bg-dark-brown rounded-2xl shadow-sm border border-gray-200 dark:border-olive/30 overflow-hidden mb-8">
-          <div class="p-5 md:p-6 flex items-center justify-between border-b border-gray-200 dark:border-olive/30">
+        <div id="section-financials" class="content-section bg-white dark:bg-[#1A1A1A] rounded-2xl shadow-sm border border-gray-200 dark:border-white/10 overflow-hidden mb-8">
+          <div class="p-5 md:p-6 flex items-center justify-between border-b border-gray-200 dark:border-white/10">
             <h3 class="text-lg font-bold text-gray-800 dark:text-white">Recent Invoices</h3>
             <button class="text-sm text-terracotta hover:text-[#9c591e] font-semibold transition-colors">View All</button>
           </div>
@@ -323,7 +323,7 @@
           <div class="overflow-x-auto">
             <table class="w-full text-left rtl:text-right whitespace-nowrap">
               <thead>
-                <tr class="bg-gray-50 dark:bg-[#1d2711] text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wider">
+                <tr class="bg-gray-50 dark:bg-[#121212] text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wider">
                   <th class="px-6 py-4 font-semibold">Invoice ID</th>
                   <th class="px-6 py-4 font-semibold">Description</th>
                   <th class="px-6 py-4 font-semibold">Date</th>
@@ -332,8 +332,8 @@
                   <th class="px-6 py-4 font-semibold ltr:text-right rtl:text-left">Download</th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200 dark:divide-olive/20 text-sm">
-                <tr class="hover:bg-gray-50 dark:hover:bg-olive/10 transition-colors">
+              <tbody class="divide-y divide-gray-200 dark:divide-white/10 text-sm">
+                <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
                   <td class="px-6 py-4 text-gray-800 dark:text-gray-200 font-mono">#INV-2026-089</td>
                   <td class="px-6 py-4 text-gray-600 dark:text-gray-300">Full Room Design - Installment 2</td>
                   <td class="px-6 py-4 text-gray-600 dark:text-gray-300">Nov 10, 2026</td>
@@ -347,7 +347,7 @@
                     <button class="text-gray-400 hover:text-terracotta transition-colors p-1"><i class="fas fa-download"></i></button>
                   </td>
                 </tr>
-                <tr class="hover:bg-gray-50 dark:hover:bg-olive/10 transition-colors">
+                <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
                   <td class="px-6 py-4 text-gray-800 dark:text-gray-200 font-mono">#INV-2026-072</td>
                   <td class="px-6 py-4 text-gray-600 dark:text-gray-300">West Elm Furniture Order</td>
                   <td class="px-6 py-4 text-gray-600 dark:text-gray-300">Nov 05, 2026</td>
@@ -361,7 +361,7 @@
                     <button class="text-gray-400 hover:text-terracotta transition-colors p-1"><i class="fas fa-download"></i></button>
                   </td>
                 </tr>
-                <tr class="hover:bg-gray-50 dark:hover:bg-olive/10 transition-colors">
+                <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
                   <td class="px-6 py-4 text-gray-800 dark:text-gray-200 font-mono">#INV-2026-041</td>
                   <td class="px-6 py-4 text-gray-600 dark:text-gray-300">Initial Consultation Deposit</td>
                   <td class="px-6 py-4 text-gray-600 dark:text-gray-300">Oct 20, 2026</td>
@@ -382,14 +382,14 @@
 
         <div id="section-communication" class="content-section grid grid-cols-1 xl:grid-cols-2 gap-6 mb-8">
           
-          <div class="bg-white dark:bg-dark-brown p-5 md:p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-olive/30 flex flex-col">
+          <div class="bg-white dark:bg-[#1A1A1A] p-5 md:p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-white/10 flex flex-col">
             <div class="flex items-center justify-between mb-6">
               <h3 class="text-lg font-bold text-gray-800 dark:text-white">Upcoming Appointments</h3>
               <button class="text-sm text-terracotta hover:text-[#9c591e] font-semibold transition-colors">+ Book New</button>
             </div>
             
             <div class="space-y-4 flex-1">
-              <div class="flex items-center p-4 bg-gray-50 dark:bg-[#1d2711] rounded-xl border border-gray-100 dark:border-olive/20 hover:border-terracotta/50 transition-colors">
+              <div class="flex items-center p-4 bg-gray-50 dark:bg-[#121212] rounded-xl border border-gray-100 dark:border-white/10 hover:border-terracotta/50 transition-colors">
                 <div class="bg-terracotta/10 text-terracotta rounded-lg p-3 text-center min-w-[3.5rem] ltr:mr-4 rtl:ml-4">
                   <p class="text-[10px] uppercase font-bold">Nov</p>
                   <p class="text-xl font-bold leading-none mt-0.5">12</p>
@@ -400,8 +400,8 @@
                 </div>
               </div>
               
-              <div class="flex items-center p-4 bg-gray-50 dark:bg-[#1d2711] rounded-xl border border-gray-100 dark:border-olive/20 hover:border-terracotta/50 transition-colors">
-                <div class="bg-gray-200 dark:bg-olive/20 text-gray-600 dark:text-gray-400 rounded-lg p-3 text-center min-w-[3.5rem] ltr:mr-4 rtl:ml-4">
+              <div class="flex items-center p-4 bg-gray-50 dark:bg-[#121212] rounded-xl border border-gray-100 dark:border-white/10 hover:border-terracotta/50 transition-colors">
+                <div class="bg-gray-200 dark:bg-white/10 text-gray-600 dark:text-gray-400 rounded-lg p-3 text-center min-w-[3.5rem] ltr:mr-4 rtl:ml-4">
                   <p class="text-[10px] uppercase font-bold">Nov</p>
                   <p class="text-xl font-bold leading-none mt-0.5">18</p>
                 </div>
@@ -413,13 +413,13 @@
             </div>
           </div>
 
-          <div class="bg-white dark:bg-dark-brown p-5 md:p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-olive/30 flex flex-col h-[400px]">
+          <div class="bg-white dark:bg-[#1A1A1A] p-5 md:p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-white/10 flex flex-col h-[400px]">
             <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">Message Designer</h3>
             
             <div class="flex-1 overflow-y-auto space-y-4 ltr:pr-2 rtl:pl-2 mb-4 scrollbar-thin">
               <div class="flex items-start gap-3">
                 <img src="https://ui-avatars.com/api/?name=Elena+D&background=BC6C25&color=fff" class="w-8 h-8 rounded-full shadow-sm" alt="Designer">
-                <div class="bg-gray-100 dark:bg-[#1d2711] p-3 rounded-2xl rounded-tl-none text-sm text-gray-700 dark:text-gray-300">
+                <div class="bg-gray-100 dark:bg-[#121212] p-3 rounded-2xl rounded-tl-none text-sm text-gray-700 dark:text-gray-300">
                   <p>Hi Jessica! I've uploaded the new 3D renders for the master suite. Let me know what you think!</p>
                   <span class="text-[10px] text-gray-400 mt-1 block">Yesterday, 3:45 PM</span>
                 </div>
@@ -435,7 +435,7 @@
             </div>
 
             <div class="relative mt-auto">
-              <input type="text" placeholder="Type your message..." class="w-full bg-gray-50 dark:bg-[#1d2711] border border-gray-200 dark:border-olive/30 text-gray-800 dark:text-white text-sm rounded-full focus:ring-terracotta focus:border-terracotta block p-3 ltr:pl-4 rtl:pr-4 ltr:pr-12 rtl:pl-12 outline-none transition-shadow">
+              <input type="text" placeholder="Type your message..." class="w-full bg-gray-50 dark:bg-[#121212] border border-gray-200 dark:border-white/10 text-gray-800 dark:text-white text-sm rounded-full focus:ring-terracotta focus:border-terracotta block p-3 ltr:pl-4 rtl:pr-4 ltr:pr-12 rtl:pl-12 outline-none transition-shadow">
               <button class="absolute ltr:right-2 rtl:left-2 top-1.5 bottom-1.5 bg-terracotta hover:bg-[#9c591e] text-white rounded-full w-9 flex items-center justify-center transition-colors shadow-sm">
                 <i class="fas fa-paper-plane text-xs ltr:-ml-0.5 rtl:-mr-0.5"></i>
               </button>
